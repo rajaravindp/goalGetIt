@@ -18,7 +18,7 @@ Goal-Get-It is a simple web application to help you manage and track your daily 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/taskit.git
+    git clone https://github.com/rajaravindp/goalGetIt.git
     ```
 2. Navigate to the project directory:
     ```sh
@@ -35,4 +35,4 @@ Goal-Get-It is a simple web application to help you manage and track your daily 
 
 ## Contact
 
-Aravind Palepu - [your-email@example.com](mailto:your-email@example.com)
+Aravind Palepu - [aravindrajpalepu@example.com](mailto:your-email@example.com)
