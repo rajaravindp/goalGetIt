@@ -32,7 +32,3 @@ Goal-Get-It is a simple web application to help you manage and track your daily 
 2. Add your goals in the input fields.
 3. Click the checkbox to mark a goal as completed.
 4. Hover over the progress bar to see motivational messages.
-
-## Contact
-
-Aravind Palepu - [aravindrajpalepu@gmail.com](mailto:your-email@example.com)
