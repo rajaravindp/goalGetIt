@@ -1,6 +1,6 @@
 # Goal-Get-It
 
-Goal-Get-It is a simple web application to help you manage and track your daily goals. It provides a user-friendly interface to add, complete, and track your tasks.
+Goal-Get-It is a simple web application to help you manage and track your daily goals. It provides a user-friendly interface to add, complete, and track your goals for the day.
 
 ## Features
 
@@ -35,4 +35,4 @@ Goal-Get-It is a simple web application to help you manage and track your daily 
 
 ## Contact
 
-Aravind Palepu - [aravindrajpalepu@example.com](mailto:your-email@example.com)
+Aravind Palepu - [aravindrajpalepu@gmail.com](mailto:your-email@example.com)
