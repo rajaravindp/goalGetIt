@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #a583ab, #77a7b7); 
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 16px;
+    
+}
+
+.app-title {
+    font-size: 72px;
+    background-image: -webkit-linear-gradient(hsl(318, 44%, 33%), #1a191a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.app-container {
+    font-size: 22px;
+    background-image: linear-gradient(to bottom, #a583ab, #77a7b7); 
+    max-width: 660px;
+    margin-inline: auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.task {
+    color: rgb(45, 12, 46)
+}
+
+.schedule-icon {
+    width: 45px;
+    height: 45px;
+    margin-left: 16px auto;
+    vertical-align: middle;
+}
+
+.get-the-bag-gurl {
+    font-size: 12px;
+    color: rgb(45, 12, 46);
+    font-weight: 800;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 8px 0px 8px 0px;
+}
+
+.progress-val {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, rgb(250, 250, 250), rgb(69, 40, 70));
+    border-radius: 15px;
+    transition: width 1s ease-in-out, background 1s ease-in-out;
+    font-size: 10px;
+    color: rgb(45, 12, 46);
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.progress-val span {
+    padding-left: 5px;
+    min-width: max-content;
+}
+
+.error-label {
+    color: #994646;
+    font-size: 12px;
+    font-weight: 800;
+    /* position: absolute; */
+    display: none;
+}
+
+.show-error .error-label {
+    display: block;
+}
+
+.goal-container {
+    border:1px solid #d7c5da;
+    border-radius: 15px;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    padding: 40px 22px;
+    vertical-align: middle;
+    margin-block: 46px;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    border: 0.5px solid rgb(45, 12, 46, 0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon {
+    display: none;
+}
+
+.goal-inp {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: transparent;
+    margin-left: 22px;
+    height: 24px;
+    font-weight: 800;
+}
+
+.goal-inp::placeholder {
+    color: rgb(45, 12, 46, 0.3);
+}
+
+.goal-motivator{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(45, 12, 46);
+    font-weight: 800;
+}
+
+.app-footer{
+    color: rgb(45, 12, 46);
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    margin-block: 36px;
+}
+
+.brain-icon {
+    width: 26px;
+    height: 24px;
+    vertical-align: middle;
+    transition: transform 0.5s ease-in-out;
+}
+
+.brain-icon:hover {
+    animation: spin 0.5s linear;
+}
+
+.completed .checkbox {
+    background-color: rgb(45, 12, 46);
+    background: rgb(45, 12, 46);
+}
+
+.completed .check-icon {
+    display: block;
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.completed .goal-inp {
+    text-decoration: line-through;
+    color: rgb(45, 12, 46, 0.7);
+    animation: scribble 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes scribble {
+    0% { text-decoration: line-through; text-decoration-color: transparent; }
+    10% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.3); transform: rotate(2deg); }
+    20% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.6); transform: rotate(-2deg); }
+    30% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.9); transform: rotate(1deg); }
+    40% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.6); transform: rotate(-1deg); }
+    50% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.9); transform: rotate(3deg); }
+    60% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.6); transform: rotate(-3deg); }
+    70% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.9); transform: rotate(2deg); }
+    80% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.6); transform: rotate(-2deg); }
+    90% { text-decoration: line-through; text-decoration-color: rgba(45, 12, 46, 0.9); transform: rotate(1deg); }
+    100% { text-decoration: line-through; text-decoration-color: rgb(45, 12, 46); transform: rotate(0deg); }
+}
+
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 32px;
+    }
+
+    .app-container {
+        padding: 16px 32px;
+    }
+
+    .goal-container {
+        height: 2px;
+        margin-bottom: 24px;
+        border-radius: 7.5px;
+    }
+
+    .checkbox {
+        height: 20px;
+        width: 20px;
+    }
+}
