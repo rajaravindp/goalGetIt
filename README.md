@@ -1,4 +1,4 @@
-# Goal-Get-It
+# [Goal-Get-It](https://goalgetit.netlify.app/)
 
 Goal-Get-It is a simple web application to help you manage and track your daily goals. It provides a user-friendly interface to add, complete, and track your goals for the day.
 
